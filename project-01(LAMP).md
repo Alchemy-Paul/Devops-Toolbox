@@ -17,7 +17,7 @@
 5. I selected the Ubuntu free tier instance
 6. I set the required configurations (Enabled public IP, security group, and key pair)
 
-![Step 3 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/3cad2552-551d-4d12-82dd-ebf617f74154/1751db9e-1409-4109-acd8-9eaba5082a4e.png?crop=focalpoint&fit=crop&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1366%3A625)
+![Step 3 screenshot](<images/project01/Screenshot from 2023-10-04 23-05-18.png>)
 
 
 #### 4.  INSTALLING APACHE AND UPDATING THE FIREWALL
@@ -28,7 +28,8 @@
    ```
     sudo apt update
 ```
-![Step 5 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/44817e91-237e-4feb-afac-4e4aa2313a88/f3c51316-e765-4f33-9e4c-d050c8ec9324.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
+![Step 5 screenshot](<images/project01/Screenshot from 2023-10-04 22-39-36.png>)
+![step 5.1 screenshot](<images/project01/Screenshot from 2023-10-04 22-41-47.png>)
 
 
  2. To run apache2 package installation:
@@ -40,13 +41,13 @@
     sudo systemctl status apache2
 ```
 4. The green light indicates Apache2 is running.
-![Step 6 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/4852bfb3-3ba9-4a77-ad3f-be0cdc965337/61d45169-335e-4c82-a8a9-fe2a0e82bcc2.png?crop=focalpoint&fit=crop&fp-x=0.4916&fp-y=0.4317&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
+![Step 6 screenshot](<images/project01/Screenshot from 2023-10-04 22-42-01.png>)
 
 
  6. Open port 80 on the Ubuntu instance to allow access from the internet.
 7. Access the Apache2 service locally in our Ubuntu shell by running: 
 **ip address of your insance** or **curl http://localhost:80** or **curl http://127.0.0.1:80** This command would output the Apache2 payload indicating that it is access
-![Step 7 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/7ddd0f31-4667-43aa-ba08-209c17bebd25/b7315c94-c8c4-4b4c-807b-5bca42f49b3d.jpeg?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1138%3A546)
+![Step 7 screenshot](<images/project01/Screenshot from 2023-10-04 22-43-25.png>)
 
 
 #### 5. INSTALLING MYSQL
@@ -60,14 +61,14 @@ In this step, I install a Database Management System (DBMS) to be able to store 
 ```
 2. Confirm installation by typing Y when prompted.
 
-![Step 9 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/4a943496-17cf-490f-8a1e-31e5a2e104db/25493e85-f2ed-45fe-aa93-58e218680d4c.png?crop=focalpoint&fit=crop&fp-x=0.4916&fp-y=0.4317&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
+![Step 9 screenshot](<images/project01/Screenshot from 2023-10-04 22-48-51.png>)
 
 
  3. Once installation is complete, log in to the MySQL console by running: 
 ```
 sudo mysql
 ```
-![Step 10 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/16b64e8b-2dd1-4bde-9830-343a8d39b61b/77a53f39-670a-4c21-8e01-e44ec142975f.png?crop=focalpoint&fit=crop&fp-x=0.4916&fp-y=0.4317&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
+![Step 10 screenshot](<images/project01/Screenshot from 2023-10-04 23-00-05.png>)
 
 
  4. Next, run a security script that comes pre-installed with MySQL, to remove some insecure default settings and lock down access to your database system. run: 
@@ -77,7 +78,7 @@ sudo mysql
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password1';
 ```
-![Step 12 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/0f154c29-fbb1-4fc8-9b32-40de18c4fd3e/21e4c155-8766-453e-8073-aae30a34ef3c.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
+![Step 12 screenshot](<images/project01/Screenshot from 2023-10-04 23-00-16.png>)
 
 
  5. Run the interactive script by typing:
@@ -89,8 +90,6 @@ and following the instructions.
 ```
 sudo mysql -p
 ```
-![Step 13 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/a328d108-9cc2-4a92-8e00-a8cfa8ef55fd/87585a1f-c85a-479f-b9f5-257f57a93937.png?crop=focalpoint&fit=crop&fp-x=0.4916&fp-y=0.4317&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
-
 
  7. Type exit and enter to exit the console.
 
@@ -101,11 +100,11 @@ Steps
 ```
 sudo apt install php libapache2-mod-php php-mysql
 ```
-![Step 15 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/4370d8a4-88ce-41f2-b0c9-c9cb2154f490/7ee68fa1-2500-4fbf-b7c4-1994dd6b893e.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
+![Step 13 & 14 screenshot](<images/project01/Screenshot from 2023-10-04 23-00-05.png>)
 
 
  2. After installation is done, run the following command to confirm your PHP version: **php -v**
-![Step 16 screenshot](https://images.tango.us/workflows/ccf0ed53-ebe6-491b-a20c-5ffdeec18005/steps/63498a43-a393-49bd-b57d-d9c4c074c8b2/3cb2079b-0474-4559-a03d-641262d9641d.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=888%3A578)
+![Step 15 screenshot](<images/project01/Screenshot from 2023-10-04 23-01-03.png>)
 
 
  3. At this point, your LAMP stack is completely installed and fully operational.
