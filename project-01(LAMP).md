@@ -168,7 +168,7 @@ sudo apt install php libapache2-mod-php php-mysql
 ![Step 19-23 screenshot](<images/project01/Screenshot from 2023-10-04 23-11-42.png>)
 
 
-![Step 19-23 screenshot](<images/project01/Screenshot from 2023-10-04 23-11-30.png>)
+![Step 24 screenshot](<images/project01/Screenshot from 2023-10-04 23-11-30.png>)
 
 
 
@@ -253,7 +253,7 @@ Once maintenance is over, the index.html is renamed or removed from the document
         DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.html
 </IfModule>
 
-![Step 39 screenshot](<https://images.tango.us/workflows/f5bb192a-e935-4faa-bce3-6f7ee92f44ee/steps/07b3454d-f5e7-4c62-80cd-8965af15e804/1bf3dacd-0f53-4449-ab7b-6193b9c105ae.jpeg?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1363%3A549>)
+![Step 35 screenshot](<https://images.tango.us/workflows/f5bb192a-e935-4faa-bce3-6f7ee92f44ee/steps/07b3454d-f5e7-4c62-80cd-8965af15e804/1bf3dacd-0f53-4449-ab7b-6193b9c105ae.jpeg?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1363%3A549>)
 
 
 3. After saving and closing the file, you will need to reload Apache so the changes take effect:
@@ -283,12 +283,12 @@ Once maintenance is over, the index.html is renamed or removed from the document
 phpinfo();
 ```
 
-![Step 43 screenshot](https://images.tango.us/workflows/f5bb192a-e935-4faa-bce3-6f7ee92f44ee/steps/9fb10c6e-b9c3-4dc4-a60b-c23d2b8c13c9/3d18db69-f46d-47f1-b386-f262898effcf.jpeg?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1366%3A560)
+![Step 26 screenshot](https://images.tango.us/workflows/f5bb192a-e935-4faa-bce3-6f7ee92f44ee/steps/9fb10c6e-b9c3-4dc4-a60b-c23d2b8c13c9/3d18db69-f46d-47f1-b386-f262898effcf.jpeg?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1366%3A560)
 
 
 7.  Save and close the file, then refresh the page to see changes.
 
-![Step 44 screenshot](https://images.tango.us/workflows/f5bb192a-e935-4faa-bce3-6f7ee92f44ee/steps/c17cfd4f-2e40-4784-98b4-60ad29f416b9/117560c7-8089-4f5f-9883-89027590cd6f.jpeg?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1365%3A696)
+![Step 27 screenshot](https://images.tango.us/workflows/f5bb192a-e935-4faa-bce3-6f7ee92f44ee/steps/c17cfd4f-2e40-4784-98b4-60ad29f416b9/117560c7-8089-4f5f-9883-89027590cd6f.jpeg?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&fp-z=1.0000&w=1200&mark-w=0.2&mark-pad=0&mark64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmsucG5n&ar=1365%3A696)
 
 
 8.  This page provides information about your server from the perspective of PHP. It is useful for debugging and ensuring that your settings are being applied correctly.
