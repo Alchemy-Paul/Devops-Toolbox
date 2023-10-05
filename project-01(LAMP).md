@@ -176,6 +176,7 @@ sudo apt install php libapache2-mod-php php-mysql
  9. Finally, reload Apache so these changes take effect: 
 ```
  $ sudo systemctl reload apache2
+ ```
 
 
  10. Next, use a2ensite command to enable the new virtual host:
