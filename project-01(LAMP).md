@@ -223,6 +223,8 @@ create a simple html page
 
  15. Reload the public IP to see changes to the apache2 default page.
 
+![Step 19-23 screenshot](<images/project01/Screenshot from 2023-10-04 23-11-52.png>)
+
 
 #### 8.   ENABLE PHP ON THE WEBSITE
  Steps
