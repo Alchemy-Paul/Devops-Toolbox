@@ -8,35 +8,43 @@
 #### Steps
 * Update ubuntu: `sudo apt update`
 * Upgrade ubuntu: `sudo apt upgrade`
-* Get the location of Node.js software from Ubuntu repositories. Run: `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-.
+* Get the location of Node.js software from Ubuntu repositories. Run: 
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
 
-* Install Node.js on the server with this command: `sudo apt-get install -y nodejs` This command installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts. 
+
+* Install Node.js on the server with this command:
+ ```sudo apt-get install -y nodejs
+ ``` 
+ This command installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts. 
 * Verify the node installation with this command: `node -v`
 * Verify the npm installation with this command: `npm -v`
 .
 
 ##### Application Code Setup
-* Create a new directory for your To-Do project: `mkdir Todo`
-* Run the command below to verify that the Todo directory is created, run: `ls`
-* Next, change the current directory to the newly created one: `cd Todo`
+* Create a new directory for your To-Do project: 
+```mkdir Todo```
+* Run the command below to verify that the Todo directory is created, run: ```ls```
+* Next, change the current directory to the newly created one: ```cd Todo```
 * Next, you will use the command npm init to initialise your project, so that a new file named package.json will be created. This file will normally contain information about your application and the dependencies that it needs to run. Run the command: `npm init` then follow the prompt and finally answer yes to write out the package file.
 .
 
-* Run the command `ls` to confirm that you have package.json file created.
+* Run the command ```ls``` to confirm that you have package.json file created.
 .
 
 
 
 
 ##### INSTALL EXPRESSJS
-* To use express, install it using npm: `npm install express`
-* Next, create a file index.js with this command: `touch index.js`
-* Run `ls` to confirm that your **index.js** file is successfully created.
+* To use express, install it using npm: ```npm install express```
+* Next, create a file index.js with this command: ```touch index.js```
+* Run ```ls``` to confirm that your **index.js** file is successfully created.
 .
 * Next step is to install the **dotenv** module. Run this code: `npm install dotenv`
-* Then open the **index.js** file with this command: `vim index.js`
+* Then open the **index.js** file with this command: ```vim index.js```
 * Type the code below into it and save:
+
 ```
 const express = require('express');
 require('dotenv').config();
@@ -62,7 +70,7 @@ console.log(`Server running on port ${port}`)
 * Use **:w** to save in vim and use **:qa** to exit vim
 .
 
-* Test start the server to see if it works. Type: `node index.js`
+* Test start the server to see if it works. Type: ```node index.js```
 * You should see Server running on port 5000 in the terminal.
 .
 
@@ -78,11 +86,13 @@ console.log(`Server running on port ${port}`)
   * Create a new task
   * Display list of all tasks
   * Delete a completed task
-* For each task, we need to create routes that will define various endpoints that the To-do app will depend on. Create a folder called **routes** with this command `mkdir routes`
-* Change directory to **routes** folder and create a file **api.js** with the command: `touch api.js`
+* For each task, we need to create routes that will define various endpoints that the To-do app will depend on. Create a folder called **routes** with this command
+```mkdir routes```
+* Change directory to **routes** folder and create a file **api.js** with the command:
+ ```touch api.js```
 .
 
-* Open the file with the command below `vim api.js`
+* Open the file with the command below ```vim api.js```
 * Copy and save the code below into the file:
 ```
 const express = require ('express');
@@ -108,9 +118,9 @@ module.exports = router;
 
 
 ##### MODELS
-* To create a Schema and a model, install mongoose which is a Node.js package that makes working with mongodb easier. Change directory back Todo folder with `cd ..` and install Mongoose with the following command: `npm install mongoose`
-* Create a new folder **models**, then change directory into the newly created **models** folder, Inside the models folder, create a file and name it **todo.js** with the following command: `mkdir models && cd models && touch todo.js`
-* Open the file created with vim todo.js then paste the code below in the file:
+* To create a Schema and a model, install mongoose which is a Node.js package that makes working with mongodb easier. Change directory back Todo folder with ```cd ..``` and install Mongoose with the following command: ```npm install mongoose```
+* Create a new folder **models**, then change directory into the newly created **models** folder, Inside the models folder, create a file and name it **todo.js** with the following command: ```mkdir models && cd models && touch todo.js```
+* Open the file created with ```vim todo.js``` then paste the code below in the file:
 ```
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
